@@ -33,11 +33,13 @@
     <link rel="stylesheet" href="./assets/css/persona/persona-imagen.css">
     <link rel="stylesheet" href="./assets/css/persona/persona-funcion.css">
     <link rel="stylesheet" href="./assets/css/persona/persona-nombre.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <link rel="stylesheet" href="./assets/css/contacto/contacto.css">
     <link rel="stylesheet" href="./assets/css/rodapie.css">
     <link rel="stylesheet" href="./assets/css/rodapie/rodapie-titulo.css">
     <link rel="stylesheet" href="./assets/css/rodapie/rodapie-descripcion.css">
     <link rel="stylesheet" href="./assets/css/rodapie/rodapie-lista.css">
-    <link rel="stylesheet" href="./assets/css/rodapie/rodapie-iten.css">
+    <link rel="stylesheet" href="./assets/css/rodapie/rodapie-item.css">
     <link rel="stylesheet" href="./assets/css/rodapie/rodapie-icon.css">
     <link rel="stylesheet" href="./assets/css/logo.css">
 </head>
@@ -46,14 +48,15 @@
         <img class="logo" src="./assets/img/logo.jpg" alt="frutayfruto">
         <nav class="menu">
             <ul class="menu__lista">
-                <li class="menu__item"><a class="menu__link--activo" href="">Inicio</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Recetas</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Quienes Somos</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
+                <li class="menu__item"><a class="menu__link--activo" href="#inicio">Inicio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#recetas">Recetas</a></li>
+                <li class="menu__item"><a class="menu__link" href="#quienes">Quienes Somos</a></li>
+                <li class="menu__item"><a class="menu__link" href="#rodapie">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section class="banner">
+    <main>
+    <section class="banner" id="Inicio">
         <div class="banner__imagen"></div>
         <h2 class="banner__titulo">Reaproveche mejor los alimentos</h2>
     </section>
@@ -64,7 +67,7 @@
         </p>
     </section>
     <!-- Aula 3 -->
-    <section class="recetas">
+    <section class="recetas" id="recetas">
         <div class="receta">
             <img class="receta__imagen" alt="bol de aguacate" src="./assets/img/recetas/ensalada-de-frutas.jpg" />
             <div class="receta__contenido">
@@ -108,14 +111,14 @@
         <div class="receta">
             <img class="receta__imagen" alt="Remolachas asadas" src="./assets/img/recetas/beterrabas-asadas.jpg" />
             <div class="receta__contenido">
-                <h4 class="receta__titulo">Remolachas assadas</h4>
+                <h4 class="receta__titulo">Remolachas asadas</h4>
                 <p class="receta__descripcion">Receta refrescante llena de vitaminas para tu desayuno.</p>
                 <button class="receta__boton">Ver receta</button>
             </div>
         </div>
     </section>
     <!-- Aula 4 -->
-    <section class="quienes">
+    <section class="quienes" id="quienes">
         <h3 class="quienes__titulo">Quienes somos</h3>
         <p class="quienes__descripcion">Conozca a la comunidad detrás de la iniciativa</p>
         <div class="personas">
@@ -136,10 +139,30 @@
             </div>
         </div>
     </section>
+    </main>
     <!-- Aula 5 -->
-    <footer class="rodapie">
+      </nav>
+    </section>
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo">Contáctanos</h2>
+        <p class="contacto__descripcion">¿Tienes alguna duda o sugerencia? ¡Escríbenos!</p>
+        <form class="contacto__formulario" action="#" method="post">
+        <label for="nombre" class="contacto__label">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="contacto__input" required>
+
+        <label for="email" class="contacto__label">Correo electrónico</label>
+        <input type="email" id="email" name="email" class="contacto__input" required>
+
+        <label for="mensaje" class="contacto__label">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" class="contacto__textarea" rows="5" required></textarea>
+
+        <button type="submit" class="contacto__boton">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <footer class="rodapie" id="rodapie">
         <h3 class="rodapie__titulo">fruta & fruto 2022</h2>
-        <p class="rodapie__descripcion">Contacto</p>
+        <p class="rodapie__descripcion">DISEÑADO POR: A&B </p>
         <ul class="rodapie__lista">
             <li class="rodapie__item"><a class="rodapie__icon" href="#"><img alt="WhatsApp" src="./assets/img/WhatsApp.png"></a></li>
             <li class="rodapie__item"><a class="rodapie__icon" href="#" ><img alt="Email" src="./assets/img/email.png"></a></li>

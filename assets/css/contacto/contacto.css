@@ -1,0 +1,52 @@
+/* contacto.css */
+.contacto {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.contacto__titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto__descripcion {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contacto__formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contacto__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contacto__input,
+.contacto__textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contacto__boton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contacto__boton:hover {
+  background-color: #45a049;
+}
